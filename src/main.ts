@@ -33,6 +33,9 @@ export class App {
 
       document.getElementById("demo").innerHTML =
         xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+              document.getElementById("author").innerHTML =
+                xmlDoc.getElementsByTagName("author")[0].childNodes[0].nodeValue;
     
     }catch(error){
       console.log('App class exception.');
